@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
-const routes = require('./routes');  // Certifique-se de que o caminho está correto
+const routes = require('./routes');  
 
-app.use(express.json());  // Para lidar com requisições JSON
-app.use(routes);  // Aqui você deve passar o router como middleware
+app.use(express.json());  
+app.use(routes); 
 
 const port = 3000;
 app.listen(port, () => {
